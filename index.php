@@ -27,7 +27,7 @@
                 <input type="radio" id="mulher" value="mulher" name="sexo" required>
             </div>
             
-            <label>Sua altura</label>
+            <label>Sua altura(em cm)</label>
             <input type="number" name="altura" required>
             
             <label>Peso</label>
@@ -38,7 +38,10 @@
                 <input type="submit" name="submit" id="submit" value="continuar">
             </div>
         </form>
+        <div id="resultado">
+        </div>
     </main>
+    <script type="module" src="script.js"></script>
 </body>
 </html>
 <?php

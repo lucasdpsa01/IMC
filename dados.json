@@ -1,26 +1,106 @@
 [
     {
-        "nome": "Lucas",
-        "idade": "20",
-        "sexo": "homem",
-        "altura": 1.75,
-        "peso": "70",
-        "imc": 22.86
-    },
-    {
-        "nome": "Paiva",
-        "idade": "21",
-        "sexo": "homem",
-        "altura": 1.74,
-        "peso": "80",
-        "imc": 26.42
-    },
-    {
         "nome": "Daniela",
         "idade": "20",
         "sexo": "mulher",
         "altura": 1.7,
         "peso": "65",
         "imc": 22.49
+    },
+    {
+        "nome": "Lucas",
+        "idade": "20",
+        "sexo": "homem",
+        "altura": 1.74,
+        "peso": "70",
+        "imc": 23.12
+    },
+    {
+        "nome": "Daniel",
+        "idade": "22",
+        "sexo": "homem",
+        "altura": 1.8,
+        "peso": "74",
+        "imc": 22.84
+    },
+    {
+        "nome": "Paiva",
+        "idade": "25",
+        "sexo": "homem",
+        "altura": 1.8,
+        "peso": "60",
+        "imc": 18.52
+    },
+    {
+        "nome": "S\u00e1",
+        "idade": "18",
+        "sexo": "mulher",
+        "altura": 1.6,
+        "peso": "50",
+        "imc": 19.53
+    },
+    {
+        "nome": "S\u00e1",
+        "idade": "18",
+        "sexo": "mulher",
+        "altura": 1.6,
+        "peso": "50",
+        "imc": 19.53
+    },
+    {
+        "nome": "Oi",
+        "idade": "15",
+        "sexo": "mulher",
+        "altura": 1.67,
+        "peso": "60",
+        "imc": 21.51
+    },
+    {
+        "nome": "Jazz",
+        "idade": "20",
+        "sexo": "mulher",
+        "altura": 1.65,
+        "peso": "70",
+        "imc": 25.71
+    },
+    {
+        "nome": "Sabra",
+        "idade": "21",
+        "sexo": "mulher",
+        "altura": 1.6,
+        "peso": "60",
+        "imc": 23.44
+    },
+    {
+        "nome": "Felipao",
+        "idade": "20",
+        "sexo": "homem",
+        "altura": 1.8,
+        "peso": "75",
+        "imc": 23.15
+    },
+    {
+        "nome": "Wallace",
+        "idade": "25",
+        "sexo": "homem",
+        "altura": 1.78,
+        "peso": "89",
+        "imc": 28.09
+    },
+    {
+        "nome": "Jose",
+        "idade": "30",
+        "sexo": "homem",
+        "altura": 1.9,
+        "peso": "100",
+        "imc": 27.7
+    },
+    {
+        "nome": "Valdo",
+        "idade": "30",
+        "sexo": "homem",
+        "altura": 2,
+        "peso": "102",
+        "imc": 25.5
     }
 ]
