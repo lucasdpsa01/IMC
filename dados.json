@@ -1,0 +1,10 @@
+[
+    {
+        "nome": "Lucas",
+        "idade": "20",
+        "sexo": "homem",
+        "altura": 1.75,
+        "peso": "70",
+        "imc": 22.86
+    }
+]
