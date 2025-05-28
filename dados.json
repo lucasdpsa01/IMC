@@ -6,5 +6,21 @@
         "altura": 1.75,
         "peso": "70",
         "imc": 22.86
+    },
+    {
+        "nome": "Paiva",
+        "idade": "21",
+        "sexo": "homem",
+        "altura": 1.74,
+        "peso": "80",
+        "imc": 26.42
+    },
+    {
+        "nome": "Daniela",
+        "idade": "20",
+        "sexo": "mulher",
+        "altura": 1.7,
+        "peso": "65",
+        "imc": 22.49
     }
 ]

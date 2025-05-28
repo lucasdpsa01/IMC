@@ -11,7 +11,7 @@
         <h1>Calcule seu IMC</h1>
     </header>
     <main>
-        <form action="index.php" method="post">
+        <form action="<?php htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="post">
             <label>Nome</label>
             <input type="text" name="nome" required>
             
@@ -56,24 +56,33 @@ $peso = $_POST['peso'];
         echo"altura inválida!<br>";
     }
     
-    $imc = round($peso/($altura ** 2), 2);
+$imc = round($peso/($altura ** 2), 2);
     if ($idade && $altura) {
         echo"Seu IMC: {$imc}<br>";
     }
-    $conteudo = file_get_contents('dados.json');
-    $dados = json_decode($conteudo, true);
+$conteudo = file_get_contents('dados.json');
+$dados = json_decode($conteudo, true);
     if (!$dados) {
         $dados = [];
     }
-    $dados[] = [
-        'nome' => $nome,
-        'idade' => $idade,
-        'sexo' => $sexo,
-        'altura' => $altura,
-        'peso' => $peso,
-        'imc' => $imc
-    ];
+$dados[] = [
+    'nome' => $nome,
+    'idade' => $idade,
+    'sexo' => $sexo,
+    'altura' => $altura,
+    'peso' => $peso,
+    'imc' => $imc
+];
+file_put_contents('dados.json', json_encode($dados, JSON_PRETTY_PRINT));
 
-    file_put_contents('dados.json', json_encode($dados, JSON_PRETTY_PRINT));
-
+$sql = "INSERT INTO imcsdb (nome, idade, sexo, altura, peso, imc)
+        VALUES ('$nome', '$idade', '$sexo', '$altura', '$peso', '$imc')";
+try{
+    mysqli_query($conn, $sql);
+    echo"Dados registrados";
+}
+catch(mysqli_sql_exception){
+    echo"Não foi possivel o registro dos dados";
+}
+mysqli_close($conn);
 ?>
